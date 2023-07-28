@@ -14,15 +14,15 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
+// |  `   |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |  =   |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |  -   |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-  &sys_reset &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &sys_reset
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                 &kp ESC &kp SPACE &kp TAB   &kp RET &kp BSPC &kp DEL
+  &kp GRAVE &kp Q      &kp W      &kp E       &kp R        &kp T   &kp Y &kp U         &kp I       &kp O      &kp P         &kp EQUAL
+  &kp LCTRL &mt LGUI A &mt LALT S &mt LCTRL D &mt LSHIFT F &kp G   &kp H &mt RSHIFT J  &mt RCTRL K &mt RALT L &mt RGUI SEMI &kp SQT
+  &kp LSHFT &kp Z      &kp X      &kp C       &kp V        &kp B   &kp N &kp M         &kp COMMA   &kp DOT    &kp FSLH      &kp MINUS
+                                        &kp ESC &kp BSPC &kp TAB   &kp RET &kp SPACE &kp DEL
                         >;
                 };
                 lower_layer {
