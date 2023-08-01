@@ -11,7 +11,8 @@
 
 #define DEFAULT 0
 #define NUMPAD 1
-#define MOUSE 2
+#define ARROW 2
+#define FUNC 3
 
 / {
 
@@ -40,7 +41,7 @@
   &kp GRAVE       &kp Q      &kp W      &kp E       &kp R        &kp T          &kp Y &kp U         &kp I       &kp O      &kp P         &kp EQUAL
   &rgb_ug RGB_EFF &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHIFT F &kp G          &kp H &hm RSHIFT J  &hm RCTRL K &hm RALT L &hm RGUI SEMI &kp SQT
   &rgb_ug RGB_TOG &kp Z      &kp X      &kp C       &kp V        &kp B          &kp N &kp M         &kp COMMA   &kp DOT    &kp FSLH      &kp MINUS
-                                  &lt NUMPAD ESC &kp BSPC &lt MOUSE TAB        &kp RET &kp SPACE &kp DEL
+                             &lt FUNC ESC &lt NUMPAD BSPC &lt MOUSE TAB        &kp RET &kp SPACE &kp DEL
                         >;
                 };
                 number_layer {
@@ -67,6 +68,19 @@
    &none       &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHIFT     &none         &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp CAPS   &none
    &none       &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)      &none         &none         &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp INSERT &kp DEL
                                                  &none     &none   &none       &kp RET  &kp SPACE   &kp BKSP
+                        >;
+                };
+                function_layer {
+// -----------------------------------------------------------------------------------------
+// |    |      |      |       |        |    |   |    |  F7  |  F8  |  F9  |  F10  |    |
+// |    | LGUI | LALT | LCTRL | LSHIFT |    |   |    |  F4  |  F5  |  F6  |  F11  |    |
+// |    |      |      |       |        |    |   |    |  F1  |  F2  |  F3  |  F12  |    |
+//                           |    |    |    |   |    |    |    |
+                        bindings = <
+   &none  &none       &none       &none       &none       &none         &none   &kp F7   &kp F8   &kp F9    &kp F10 &none
+   &none  &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHIFT  &none         &none   &kp F4   &kp F5   &kp F6    &kp F11 &none
+   &none  &none       &none       &none       &none       &none         &none   &kp F1   &kp F2   &kp F3    &kp F12 &none
+                                         &none     &none   &none       &none  &none   &none
                         >;
                 };
         };
