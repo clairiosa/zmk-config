@@ -66,7 +66,7 @@
                         bindings = <
    &none       &none       &none       &none       &kp LS(LC(X))  &none         &none     &none      &none      &none      &none      &none
    &none       &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHIFT     &none         &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp CAPS   &none
-   &none       &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)      &none         &none         &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp INSERT &kp DEL
+   &none       &kp LC(Z)   &kp LC(X)   &kp LC(C)   &kp LC(V)      &none         &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp INSERT &kp DEL
                                                  &none     &none   &none       &kp RET  &kp SPACE   &kp BKSP
                         >;
                 };
