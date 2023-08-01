@@ -57,15 +57,15 @@
                 };
                 arrow_layer {
 // -----------------------------------------------------------------------------------------
-// |    |      |      |       |        |    |   |        |         |         |       |           |        |
-// |    | LGUI | LALT | LCTRL | LSHIFT |    |   |  ⬅     |    ⬇    |    ⬆    |   ⮕   |  CAPS     |        |
-// |    |      |      |       |        |    |   |  HOME  |  PG_DN  |  PG_UP  |  END  |  INSERT   |  DEL   |
-//                           |    |    |    |   | ENT |  SPACE  |  BKSP  |
+// |     |      |      |       |  REDO  |    |   |        |         |         |       |           |        |
+// |     | LGUI | LALT | LCTRL | LSHIFT |    |   |  ⬅     |    ⬇    |    ⬆    |   ⮕   |  CAPS     |        |
+// | UNDO | CUT | COPY | PASTE |        |    |   |  HOME  |  PG_DN  |  PG_UP  |  END  |  INSERT   |  DEL   |
+//                            |    |    |    |   | ENT |  SPACE  |  BKSP  |
                         bindings = <
-   &none  &none       &none       &none       &none       &none         &none     &none      &none      &none      &none      &none
-   &none  &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHIFT  &none         &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp CAPS   &none
-   &none  &none       &none       &none       &none       &none         &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp INSERT &kp DEL
-                                         &none     &none   &none       &kp RET  &kp SPACE   &kp BKSP
+   &none       &none       &none       &none       &kp K_REDO  &none         &none     &none      &none      &none      &none      &none
+   &none       &kp LGUI    &kp LALT    &kp LCTRL   &kp LSHIFT  &none         &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp CAPS   &none
+   &kp K_UNDO  &kp K_CUT   &kp K_COPY  &K_PASTE    &none       &none         &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp INSERT &kp DEL
+                                              &none     &none   &none       &kp RET  &kp SPACE   &kp BKSP
                         >;
                 };
         };
